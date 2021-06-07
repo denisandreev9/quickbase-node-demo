@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>GitHub API Example</title>
+    <meta name="description" content="Github API app with Nodejs Server.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <h1>Github API Data to FreshDesk API Contact</h1>
+    </header>
+
+    <main>
+
+      {{#if session}}
+      <p>
+        You are now logged in.
+      </p>
+      <p>
+        <a href="/logoff">Sign out</a>
+      </p>
+      {{else}}
+      <a class="container" href="/auth/github">Log-in with GitHub</a>
+      {{/if}}
+
+    </main>
+
+  </body>
+
+</html>
